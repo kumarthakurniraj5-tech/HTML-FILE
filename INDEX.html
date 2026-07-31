@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add()
+        {
+            var number1 =Number(document.getElementById("num1").value)
+            var number2=Number(document.getElementById("num2").value)
+            var number3=number1+number2
+            document.getElementById("setnumber").innerHTML=number3
+            document.getElementById("setnumber").innerHTML=number3
+
+        }
+    </script>
+    <style>
+       p{
+        color: aquamarine;
+       } 
+       #e{
+        color: brown;
+       }
+       body{
+        background-color: burlywood;
+       }
+       h1{
+        color: red;
+       }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Addition of two number program</h1>
+      <p>  Number 1<input type="number" id="num1" placeholder="Enter a number1"></p><br><br>
+       <p id="e"> Number 2<input type="number" id="num2" placeholder="Enter a number2"></p><br><br>
+        <input type="button" onclick="add()" value="ADD">
+        <h1 id="setnumber">Answer</h1>
+    </center>
+</body>
+</html>
